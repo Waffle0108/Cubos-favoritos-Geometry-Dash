@@ -1,0 +1,17 @@
+table, th, td {
+	border: 1px solid black; height:30%; text-align:center
+}
+table {
+	width:100%; font-size:100%
+}
+td {
+	height:50%
+}
+  	@keyframes respirar {
+    		0%, 100% { transform: scale(1); }
+    		50% { transform: scale(1.15); }
+  	}
+
+  	.logo-animado {
+    		animation: respirar 0.85s linear infinite;
+  	}
