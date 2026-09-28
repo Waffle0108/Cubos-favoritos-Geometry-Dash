@@ -7,11 +7,42 @@ table {
 td {
 	height:50%
 }
-  	@keyframes respirar {
-    		0%, 100% { transform: scale(1); }
-    		50% { transform: scale(1.15); }
-  	}
 
-  	.logo-animado {
-    		animation: respirar 0.85s linear infinite;
-  	}
+@keyframes respirar {
+		0%, 100% { transform: scale(1); }
+		50% { transform: scale(1.15); }
+}
+
+.logo-animado {
+		animation: respirar 0.85s linear infinite;
+}
+
+a button {
+    background:rgb(255,0,0);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+	margin-top: 50px;
+	animation: girar 3s infinite;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    16.67% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+a button:hover {
+    background:rgb(175,0,0);
+}
